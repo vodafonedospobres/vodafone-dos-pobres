@@ -1,0 +1,36 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleven 1</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<video id="stream" controls autoplay muted>
+    <source src="http://213.13.16.138/shls/LIVE%24Eleven_Sports_1_HD/index.m3u8?device=TVOS_Live&start=LIVE&end=END" type="video/mp4">
+    Your browser does not support HTML video.
+</video>
+<center>
+    <label class="switch">
+        <input onclick="toggleBackgroundColor()" type="checkbox">
+        <span class="slider"></span>
+    </label>
+</center>
+<footer>
+    <p>&copy; 2024 VodafoneTV dos pobres. No rights reserved.</p>
+</footer>
+<script>
+    let isBlack = true;
+
+    function toggleBackgroundColor() {
+        const body = document.body;
+        isBlack = !isBlack;
+
+        if (!isBlack) {
+            body.style.background = "linear-gradient(to right, #1d1b1b, #232121)";
+        } else {
+            body.style.background = "linear-gradient(to right, #00d2ff, #3a7bd5)";
+        }
+    }
+</script>
+
+<script src="/script.js"></script>
